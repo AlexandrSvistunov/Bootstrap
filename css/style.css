@@ -1,51 +1,23 @@
 @charset "UTF-8";
 /******** Fonts **********/
 @font-face {
-  font-family: "Mulish";
-  src: local("Mulish"), url("../fonts/Mulish-Regular.woff2") format("woff2"), url("../fonts/Mulish-Regular.woff") format("woff");
+  font-family: "Open Sans";
+  src: local("Open Sans"), url("../fonts/opensans-regular.woff2") format("woff2"), url("../fonts/opensans-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Mulish";
-  src: local("Mulish"), url("../fonts/Mulish-Bold.woff2") format("woff2"), url("../fonts/Mulish-Bold.woff") format("woff");
+  font-family: "Open Sans";
+  src: local("Open Sans"), url("../opensans-bold.woff2") format("woff2"), url("../fonts/opensans-bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Mulish";
-  src: local("Mulish"), url("../fonts/Mulish-SemiBold.woff2") format("woff2"), url("../fonts/Mulish-SemiBold.woff") format("woff");
+  font-family: "Open Sans";
+  src: local("Open Sans"), url("../fonts/opensans-semibold.woff2") format("woff2"), url("../fonts/opensans-semibold.woff") format("woff");
   font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Mulish";
-  src: local("Mulish"), url("../fonts/Mulish-Light.woff2") format("woff2"), url("../fonts/Mulish-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Nunito";
-  src: local("Nunito"), url("../fonts/Nunito-Regular.woff2") format("woff2"), url("../fonts/Nunito-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Nunito";
-  src: local("Nunito"), url("../fonts/Nunito-SemiBold.woff2") format("woff2"), url("../fonts/Nunito-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Nunito";
-  src: local("Nunito"), url("../fonts/Nunito-ExtraBold.woff2") format("woff2"), url("../fonts/Nunito-ExtraBold.woff") format("woff");
-  font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
@@ -69,9 +41,9 @@ html {
 }
 
 body {
-  font-family: "Mulish", sans-serif;
-  color: #333333;
-  background-color: #F5FAFE;
+  font-family: "Open Sans", sans-serif;
+  color: #212121;
+  background-color: #ffffff;
 }
 
 a {
@@ -95,7 +67,7 @@ img {
      object-fit: cover;
   width: 100%;
   height: 100%;
-  vertical-align: bottom;
+  display: block;
 }
 
 input {
@@ -108,62 +80,32 @@ button {
   background-color: transparent;
 }
 
-.container {
-  max-width: 1110px;
-  margin: auto;
-}
-
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  text-transform: uppercase;
-}
-
-.invalid {
-  color: #EC1F46;
-}
-
 /********** Header ***********/
-.header__menu-burger {
-  display: none;
-}
-.header__top {
-  background-color: #ffffff;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-.header__top .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.header__logo {
-  width: 177px;
-  margin-right: 9.7%;
+.logo {
+  width: 226px;
+  height: 63px;
 }
 
-.menu-burger {
-  height: 13px;
-  width: 16px;
-  padding: 0;
+.menu-bar {
+  padding-top: 25px;
+  padding-bottom: 32px;
+}
+.menu-bar .container {
+  max-width: 1200px;
+}
+.menu__item {
   align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  cursor: pointer;
+  margin-left: 38px;
 }
-.menu-burger__line {
-  display: block;
-  width: 16px;
-  height: 1px;
-  background-color: #333333;
+.menu__item:first-child {
+  margin-left: 0;
 }
-
-.header-nav__mobile {
-  display: none;
-}
-.header-nav__item {
-  margin-right: 2%;
-  white-space: nowrap;
+.menu__link {
+  font-family: Open Sans, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 1px;
 }
 
 /********** Main ***********/
