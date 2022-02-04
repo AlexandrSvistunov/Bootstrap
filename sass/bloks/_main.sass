@@ -1,5 +1,47 @@
 /********** Main ***********/
-table
-  .first 
-    background-color: #000000
-    border-color: #e41414
+.main
+  background-color: #393939
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../img/header-bg.jpg)
+  color: #ffffff
+  background-size: 122%
+  background-position: 69% 31%
+  text-align: center
+  padding-top: 170px
+  padding-bottom: 187px
+
+
+  &__title
+    font-size: 60px
+    font-weight: 600
+    letter-spacing: 3px
+
+    margin-bottom: 24px
+
+  &__subtitle
+    font-size: 22px
+    font-weight: 400
+    line-height: 1
+    letter-spacing: 1.1px
+    margin-bottom: 111px
+
+
+  .button
+    color: #ffffff
+    line-height: 1.1
+    transition: 0.3s
+
+  .button
+    &--empty
+      border: solid 3px #f8f8f8
+      padding: 20px 32px
+      margin-right: 25px
+            
+  .button
+    &--full
+      background-color: $button-color
+      padding: 20px 45px
+
+.button
+  font-family: "Roboto", sans-serif
+  font-weight: 700
+  text-transform: uppercase

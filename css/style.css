@@ -2,22 +2,29 @@
 /******** Fonts **********/
 @font-face {
   font-family: "Open Sans";
-  src: local("Open Sans"), url("../fonts/opensans-regular.woff2") format("woff2"), url("../fonts/opensans-regular.woff") format("woff");
+  src: url("../fonts/opensans-regular.woff2") format("woff2"), url("../fonts/opensans-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Open Sans";
-  src: local("Open Sans"), url("../opensans-bold.woff2") format("woff2"), url("../fonts/opensans-bold.woff") format("woff");
+  src: url("../opensans-bold.woff2") format("woff2"), url("../fonts/opensans-bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Open Sans";
-  src: local("Open Sans"), url("../fonts/opensans-semibold.woff2") format("woff2"), url("../fonts/opensans-semibold.woff") format("woff");
+  src: url("../fonts/opensans-semibold.woff2") format("woff2"), url("../fonts/opensans-semibold.woff") format("woff");
   font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Robotobold.woff2") format("woff2"), url("../fonts/Robotobold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -80,22 +87,28 @@ button {
   background-color: transparent;
 }
 
+.container {
+  max-width: 1200px;
+}
+
 /********** Header ***********/
 .logo {
   width: 226px;
   height: 63px;
 }
 
+.search {
+  width: 17px;
+  height: 17px;
+}
+
 .menu-bar {
   padding-top: 25px;
   padding-bottom: 32px;
 }
-.menu-bar .container {
-  max-width: 1200px;
-}
 .menu__item {
   align-items: center;
-  margin-left: 38px;
+  margin-left: 4.8%;
 }
 .menu__item:first-child {
   margin-left: 0;
@@ -109,9 +122,48 @@ button {
 }
 
 /********** Main ***********/
-table .first {
-  background-color: #000000;
-  border-color: #e41414;
+.main {
+  background-color: #393939;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/header-bg.jpg);
+  color: #ffffff;
+  background-size: 122%;
+  background-position: 69% 31%;
+  text-align: center;
+  padding-top: 170px;
+  padding-bottom: 187px;
+}
+.main__title {
+  font-size: 60px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 24px;
+}
+.main__subtitle {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 1.1px;
+  margin-bottom: 111px;
+}
+.main .button {
+  color: #ffffff;
+  line-height: 1.1;
+  transition: 0.3s;
+}
+.main .button--empty {
+  border: solid 3px #f8f8f8;
+  padding: 20px 32px;
+  margin-right: 25px;
+}
+.main .button--full {
+  background-color: #00897b;
+  padding: 20px 45px;
+}
+
+.button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 /****************Footer***************/
