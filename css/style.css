@@ -104,11 +104,14 @@ button {
 }
 
 .button {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   font-size: 20px;
   letter-spacing: 1px;
+}
+
+.item-img {
+  display: inline-block;
 }
 
 .item-title {
@@ -123,6 +126,9 @@ button {
   font-weight: 400;
   line-height: 1.47;
   letter-spacing: 0.75px;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 
 /********** Header ***********/
@@ -183,6 +189,8 @@ button {
   color: #ffffff;
   line-height: 1.1;
   transition: 0.3s;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
 }
 .main .button--empty {
   border: solid 3px #f8f8f8;
@@ -215,10 +223,66 @@ button {
 .about .item-title {
   margin-bottom: 17px;
 }
-.about .item-text {
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
+
+/****************Services***************/
+.services {
+  background-color: #e4fdf9;
+  text-align: center;
+  padding-top: 176px;
+  padding-bottom: 90px;
+}
+.services .title {
+  margin-bottom: 30px;
+}
+.services .subtitle {
+  margin-bottom: 110px;
+}
+.services__item {
+  background-color: #ffffff;
+  transition: 0.3s;
+  padding: 59px 50px 49px;
+  margin-bottom: 28px;
+}
+.services__item:hover {
+  box-shadow: 0px 10px 20px 0 rgba(0, 0, 0, 0.35);
+  background-color: #00897b;
+  color: #ffffff;
+}
+.services__item:hover .button {
+  border: solid 2px #ffffff;
+}
+.services__item:hover .services__item-img path {
+  fill: #ffffff;
+}
+.services__item-img {
+  width: 46px;
+  height: 62px;
+  margin-bottom: 36px;
+}
+.services__item-img path {
+  fill: #000000;
+}
+.services .item-title {
+  margin-bottom: 14px;
+}
+.services .item-text {
+  line-height: 1.67;
+  margin-bottom: 43px;
+}
+.services .button {
+  padding: 11px;
+  border: solid 2px #212121;
+}
+.services .button:hover {
+  border: solid 2px #ffffff;
+  color: #ffffff;
+}
+.services .button:active {
+  border: solid 2px #212121;
+  color: #000000;
+}
+.services__item-button {
+  display: inline-block;
 }
 
 /****************Footer***************/
