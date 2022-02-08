@@ -108,6 +108,7 @@ button {
   text-transform: uppercase;
   font-size: 20px;
   letter-spacing: 1px;
+  transition: 0.3s;
 }
 
 .item-img {
@@ -188,18 +189,24 @@ button {
 .main .button {
   color: #ffffff;
   line-height: 1.1;
-  transition: 0.3s;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
-}
-.main .button--empty {
-  border: solid 3px #f8f8f8;
-  padding: 20px 32px;
+  background-color: #00897b;
+  padding: 20px;
+  min-width: 220px;
+  border: solid 3px #00897b;
   margin-right: 25px;
 }
-.main .button--full {
+.main .button:last-child {
+  margin-right: 0;
+}
+.main .button:hover {
+  border: solid 3px #f8f8f8;
+  background-color: transparent;
+}
+.main .button:active {
+  border: solid 3px #00897b;
   background-color: #00897b;
-  padding: 20px 45px;
 }
 
 /****************About***************/
@@ -283,6 +290,68 @@ button {
 }
 .services__item-button {
   display: inline-block;
+}
+
+/****************Works***************/
+.works {
+  text-align: center;
+  padding-top: 132px;
+  padding-bottom: 136px;
+}
+.works .title {
+  margin-bottom: 30px;
+}
+.works .subtitle {
+  margin-bottom: 111px;
+}
+.works__menu {
+  margin-bottom: 119px;
+}
+.works__menu-button {
+  border: solid 2px #00897b;
+  color: #212121;
+  margin-right: 15px;
+  padding: 11px;
+  min-width: 179px;
+}
+.works__menu-button:first-child {
+  min-width: 100px;
+  margin-right: 20px;
+}
+.works__menu-button:last-child {
+  margin-right: 0;
+}
+.works__menu-button:hover {
+  background-color: #00897b;
+  color: #ffffff;
+}
+.works__menu-button:active {
+  border: solid 2px #00897b;
+  color: #212121;
+  background-color: transparent;
+}
+.works__gallery-item {
+  margin-bottom: 30px;
+}
+.works__gallery-button {
+  color: #ffffff;
+  line-height: 1.1;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  background-color: #00897b;
+  padding: 21px 60px;
+  border: solid 3px #00897b;
+  margin-top: 99px;
+}
+.works__gallery-button:hover {
+  border: solid 3px #00897b;
+  background-color: transparent;
+  color: #00897b;
+}
+.works__gallery-button:active {
+  border: solid 3px #00897b;
+  background-color: #00897b;
+  color: #ffffff;
 }
 
 /****************Footer***************/

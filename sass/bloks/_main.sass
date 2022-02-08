@@ -28,18 +28,20 @@
   .button
     color: #ffffff
     line-height: 1.1
-    transition: 0.3s
     font-weight: 700
     font-family: "Roboto", sans-serif
+    background-color: $button-color
+    padding: 20px
+    min-width: 220px
+    border: solid 3px $button-color
+    margin-right: 25px
+    &:last-child
+      margin-right: 0
 
   .button
-    &--empty
+    &:hover
       border: solid 3px #f8f8f8
-      padding: 20px 32px
-      margin-right: 25px
-            
-  .button
-    &--full
+      background-color: transparent
+    &:active
+      border: solid 3px $button-color
       background-color: $button-color
-      padding: 20px 45px
-
