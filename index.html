@@ -183,37 +183,37 @@
                 <div class="row justify-content-center works__menu">
                     <div class="col-xl-8">
                         <div class="d-flex justify-content-center">
-                            <button class="button works__menu-button">All</button>
-                            <button class="button works__menu-button">Web design</button>
-                            <button class="button works__menu-button">Ui/ux design</button>
-                            <button class="button works__menu-button">Mockups</button>
+                            <button val="on" class="button works__menu-button" filter="all">All</button>
+                            <button val="off" class="button works__menu-button" filter="web">Web design</button>
+                            <button val="off" class="button works__menu-button" filter="design">Ui/ux design</button>
+                            <button val="off" class="button works__menu-button" filter="mockups">Mockups</button>
                         </div>
                     </div>
                     <!-- /.col-xl-8 -->
                 </div>
                 <!-- /.row -->
-                <div class="row works__gallery">
-                    <div class="col-xl-4 works__gallery-item">
+                <div class="row works__gallery filter">
+                    <div class="col-xl-4 works__gallery-item" filter="web">
                         <img src="img/works-item-1.jpg" alt="works gallery image">
                     </div>
                     <!-- /.works__gallery-item -->
-                    <div class="col-xl-4  works__gallery-item">
+                    <div class="col-xl-4  works__gallery-item" filter="mockups">
                         <img src="img/works-item-2.jpg" alt="works gallery image">
                     </div>
                     <!-- /.works__gallery-item -->
-                    <div class="col-xl-4  works__gallery-item">
+                    <div class="col-xl-4  works__gallery-item" filter="web">
                         <img src="img/works-item-3.jpg" alt="works gallery image">
                     </div>
                     <!-- /.works__gallery-item -->
-                    <div class="col-xl-4  works__gallery-item">
+                    <div class="col-xl-4  works__gallery-item" filter="mockups">
                         <img src="img/works-item-4.jpg" alt="works gallery image">
                     </div>
                     <!-- /.works__gallery-item -->
-                    <div class="col-xl-4  works__gallery-item">
+                    <div class="col-xl-4  works__gallery-item" filter="design">
                         <img src="img/works-item-5.jpg" alt="works gallery image">
                     </div>
                     <!-- /.works__gallery-item -->
-                    <div class="col-xl-4  works__gallery-item">
+                    <div class="col-xl-4  works__gallery-item" filter="design">
                         <img src="img/works-item-6.jpg" alt="works gallery image">
                     </div>
                     <!-- /.works__gallery-item -->
@@ -239,6 +239,7 @@
     <!-- /.footer -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js "></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
