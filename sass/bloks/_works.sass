@@ -41,6 +41,14 @@
   &__gallery
     &-item
       margin-bottom: 30px
+      position: relative
+
+      &:hover
+        img
+          filter: brightness(50%)
+          transition: 0.3s
+        .works__gallery-text-hover
+          display: block
 
     &-button
       color: #ffffff
@@ -59,4 +67,26 @@
         border: solid 3px $button-color
         background-color: $button-color
         color: #ffffff
+
+    &-text
+          
+      &-hover
+        display: none
+        position: absolute
+        color: #ffffff
+        top: 47%
+        transform: translate(-50%, -50%)
+        left: 50%
+       
+      &-title
+        font-size: 20px
+        font-weight: 600
+        letter-spacing: 1px
+
+      &-subtitle
+        font-size: 15px
+        font-weight: 600
+        line-height: 1.47
+        letter-spacing: 0.75px
+
 
