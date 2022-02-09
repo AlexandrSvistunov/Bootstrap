@@ -29,4 +29,13 @@ $(document).ready(function() {
 
     });
 
+    // *******Меняем цвет кнопки на фокусе*********
+
+    $('.works__menu-button').click(function() {
+
+        $('.works__menu-button').removeClass('focused');
+        $(this).addClass('focused');
+
+    });
+
 });

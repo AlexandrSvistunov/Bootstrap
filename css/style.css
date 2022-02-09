@@ -330,6 +330,10 @@ button {
   color: #212121;
   background-color: transparent;
 }
+.works__menu .focused {
+  background-color: #00897b;
+  color: #ffffff;
+}
 .works__gallery-item {
   margin-bottom: 30px;
 }
