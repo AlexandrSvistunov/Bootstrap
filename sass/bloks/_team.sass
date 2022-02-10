@@ -1,0 +1,54 @@
+/******** Team **********/
+.team
+  text-align: center
+  padding-top: 122px
+  padding-bottom: 265px
+
+  .subtitle
+    margin-bottom: 126px
+
+  &__item
+    &-img
+      border-radius: 10px
+      overflow: hidden
+      margin-bottom: 30px
+
+    &-info
+      margin-bottom: 28px
+
+    &-name
+      font-size: 20px
+      font-weight: 600
+      letter-spacing: 1px
+      margin-bottom: 4px
+
+    &-function
+      font-size: 15px
+      letter-spacing: 0.75px
+
+    &-links
+
+    &-link
+      width: 50px
+      height: 50px
+      border-radius: 10px
+      background-color: #f0f1f1
+      margin-right: 22px
+      transition: 0.3s
+      display: flex
+      align-items: center
+      justify-content: center
+      padding: 0
+      transition: 0.5s
+      &:last-child
+        margin-right: 0
+      
+      &-icon
+        path
+          fill: $button-color
+      &:hover
+        background-color: #3949ab
+
+        .team__item-link-icon
+          path
+            fill: #ffffff
