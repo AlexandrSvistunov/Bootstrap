@@ -1,0 +1,73 @@
+/******** Pricing **********/
+.pricing
+  text-align: center
+  background-color: #f0f1f1
+  padding-top: 129px
+  padding-bottom: 125px
+
+  .title
+    margin-bottom: 30px
+
+  .subtitle
+    margin-bottom: 123px
+  &__item
+    background-color: #ffffff
+    padding-bottom: 63px
+    transition: 0.5s
+    &-header
+      color: #ffffff
+      background-image: url(../img/price-bg.png)
+      background-size: cover
+      padding-top: 44px
+      padding-bottom: 49px
+      margin-bottom: 34px
+      
+      sup
+        font-size: 25px
+        vertical-align: text-top
+      sub
+        font-size: 17px
+        letter-spacing: 0.85px
+        vertical-align: text-top
+      
+    &-title
+      font-size: 25px
+      letter-spacing: 1.35px
+      font-weight: 400
+      margin-bottom: 14px
+    &-price
+      font-size: 50px
+      letter-spacing: 2.5px
+    &-info
+      font-size: 17px
+      font-weight: 300
+      letter-spacing: 0.85px
+      color: $primary-color
+      display: flex
+      flex-direction: column
+      align-items: center
+      line-height: 2.39
+      margin-bottom: 44px
+
+      li
+        margin-bottom: 22px
+        min-width: 178px
+        border-bottom: solid 1px #bfbfbf
+
+    &-button
+      border: solid 2px #000000
+      color: $primary-color
+      padding: 13px 22px
+      &:hover
+        border: solid 2px $button-color
+        background-color: $button-color
+        color: #ffffff
+      &:active
+        color: $primary-color
+        background-color: transparent
+      
+
+    &:hover
+      box-shadow: 0px 3px 25px 0 rgba(0, 0, 0, 0.35)
+
+        
