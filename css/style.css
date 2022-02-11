@@ -300,7 +300,7 @@ button {
 /****************Works***************/
 .works {
   text-align: center;
-  padding-top: 128px;
+  padding-top: 130px;
   padding-bottom: 136px;
 }
 .works .title {
@@ -394,7 +394,7 @@ button {
 .pricing {
   text-align: center;
   background-color: #f0f1f1;
-  padding-top: 129px;
+  padding-top: 130px;
   padding-bottom: 125px;
 }
 .pricing .title {
@@ -472,8 +472,8 @@ button {
 /******** Team **********/
 .team {
   text-align: center;
-  padding-top: 122px;
-  padding-bottom: 265px;
+  padding-top: 126px;
+  padding-bottom: 90px;
 }
 .team .subtitle {
   margin-bottom: 126px;
@@ -520,6 +520,27 @@ button {
 }
 .team__item-link:hover .team__item-link-icon path {
   fill: #ffffff;
+}
+.team .slick-slide img {
+  margin: 0 auto;
+}
+.team .slick-list {
+  margin-bottom: 114px;
+}
+.team .dots-style {
+  display: flex;
+  justify-content: center;
+}
+.team .dots-style button {
+  background-color: #00897b;
+  border-radius: 50%;
+  font-size: 0;
+  height: 15px;
+  width: 15px;
+  margin: 5px;
+}
+.team li[class=slick-active] button {
+  background-color: #3949ab;
 }
 
 /****************Footer***************/
