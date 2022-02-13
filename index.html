@@ -169,7 +169,7 @@
                     <!-- /.col-xl-4 -->
                 </div>
                 <!-- /.row -->
-
+            </div>
         </section>
         <!-- /.section services -->
         <section class="works">
@@ -184,17 +184,17 @@
                 <div class="row justify-content-center works__menu">
                     <div class="col-xl-8">
                         <div class="d-flex justify-content-center">
-                            <button val="on" class="button works__menu-button" filter="all">All</button>
-                            <button val="off" class="button works__menu-button" filter="web">Web design</button>
-                            <button val="off" class="button works__menu-button" filter="design">Ui/ux design</button>
-                            <button val="off" class="button works__menu-button" filter="mockups">Mockups</button>
+                            <button type="button" data-val="on" class="button works__menu-button" data-filter="all">All</button>
+                            <button type="button" data-val="off" class="button works__menu-button" data-filter="web">Web design</button>
+                            <button type="button" data-val="off" class="button works__menu-button" data-filter="design">Ui/ux design</button>
+                            <button type="button" data-val="off" class="button works__menu-button" data-filter="mockups">Mockups</button>
                         </div>
                     </div>
                     <!-- /.col-xl-8 -->
                 </div>
                 <!-- /.row -->
                 <div class="row works__gallery filter">
-                    <div class="col-xl-4 works__gallery-item" filter="web">
+                    <div class="col-xl-4 works__gallery-item" data-filter="web">
                         <img src="img/works-item-1.jpg" alt="works gallery image">
                         <div class="works__gallery-text-hover">
                             <h4 class="works__gallery-text-title">Hand Watch</h4>
@@ -202,7 +202,7 @@
                         </div>
                     </div>
                     <!-- /.works__gallery-item -->
-                    <div class="col-xl-4  works__gallery-item" filter="mockups">
+                    <div class="col-xl-4  works__gallery-item" data-filter="mockups">
                         <img src="img/works-item-2.jpg" alt="works gallery image">
                         <div class="works__gallery-text-hover">
                             <h4 class="works__gallery-text-title">Mtdicine</h4>
@@ -210,7 +210,7 @@
                         </div>
                     </div>
                     <!-- /.works__gallery-item -->
-                    <div class="col-xl-4  works__gallery-item" filter="web">
+                    <div class="col-xl-4  works__gallery-item" data-filter="web">
                         <img src="img/works-item-3.jpg" alt="works gallery image">
                         <div class="works__gallery-text-hover">
                             <h4 class="works__gallery-text-title">Underpants</h4>
@@ -218,7 +218,7 @@
                         </div>
                     </div>
                     <!-- /.works__gallery-item -->
-                    <div class="col-xl-4  works__gallery-item" filter="mockups">
+                    <div class="col-xl-4  works__gallery-item" data-filter="mockups">
                         <img src="img/works-item-4.jpg" alt="works gallery image">
                         <div class="works__gallery-text-hover">
                             <h4 class="works__gallery-text-title">flask</h4>
@@ -226,7 +226,7 @@
                         </div>
                     </div>
                     <!-- /.works__gallery-item -->
-                    <div class="col-xl-4  works__gallery-item" filter="design">
+                    <div class="col-xl-4  works__gallery-item" data-filter="design">
                         <img src="img/works-item-5.jpg" alt="works gallery image">
                         <div class="works__gallery-text-hover">
                             <h4 class="works__gallery-text-title">Bottle</h4>
@@ -234,7 +234,7 @@
                         </div>
                     </div>
                     <!-- /.works__gallery-item -->
-                    <div class="col-xl-4  works__gallery-item" filter="design">
+                    <div class="col-xl-4  works__gallery-item" data-filter="design">
                         <img src="img/works-item-6.jpg" alt="works gallery image">
                         <div class="works__gallery-text-hover">
                             <h4 class="works__gallery-text-title">Bag</h4>
@@ -243,7 +243,7 @@
                     </div>
                     <!-- /.works__gallery-item -->
                     <div class="d-flex justify-content-center">
-                        <button class="button works__gallery-button" val="on" filter="all">View all</button>
+                        <button class="button works__gallery-button" data-val="on" data-filter="all">View all</button>
                     </div>
                 </div>
                 <!-- /.works__gallery -->
@@ -280,7 +280,7 @@
                     <div class="col-xl-4">
                         <div class="pricing__item">
                             <div class="pricing__item-header">
-                                <h3 class="pricing__item-title">Free Trail</h3>
+                                <h3 class="pricing__item-title">Basic</h3>
                                 <sup>$</sup>
                                 <span class="pricing__item-price">50</span>
                                 <sub>per month</sub>
@@ -297,7 +297,7 @@
                     <div class="col-xl-4">
                         <div class="pricing__item">
                             <div class="pricing__item-header">
-                                <h3 class="pricing__item-title">Free Trail</h3>
+                                <h3 class="pricing__item-title">Ultimates</h3>
                                 <sup>$</sup>
                                 <span class="pricing__item-price">99</span>
                                 <sub>per month</sub>
@@ -517,13 +517,84 @@
             </div>
         </section>
         <!-- /.section team -->
+        <section class="blog">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7">
+                        <h2 class="title">Blog</h2>
+                        <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                    </div>
+                </div>
+                <article class="row">
+                    <div class="col-xl-6">
+                        <img class="blog__img" src="img/blog-img-1.jpg" alt="blog image">
+                    </div>
+                    <div class="col-xl-6 blog__article">
+                        <a href="#" class="blog__article-title">
+                            <h3>SEO Quis Vestibulum</h3>
+                        </a>
+                        <div class="blog__article-info d-flex align-items-center">
+                            <img src="img/svg/calendar.svg" alt="blog article icon" class="blog__article-icon">
+                            <span class="blog__article-date">14.07.2017</span>
+                            <img src="img/svg/file-earmark.svg" alt="blog article icon" class="blog__article-icon">
+                            <p class="blog__article-info-text">Development</p>
+                        </div>
+                        <p class="blog__article-text">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+
+                    </div>
+                    <!-- /.article -->
+                </article>
+                <article class="row">
+                    <div class="col-xl-6">
+                        <img class="blog__img" src="img/blog-img-2.jpg" alt="blog image">
+                    </div>
+                    <div class="col-xl-6 blog__article">
+                        <a href="#" class="blog__article-title">
+                            <h3>SEO Quis Vestibulum</h3>
+                        </a>
+                        <div class="blog__article-info d-flex align-items-center">
+                            <img src="img/svg/calendar.svg" alt="blog article icon" class="blog__article-icon">
+                            <span class="blog__article-date">14.07.2017</span>
+                            <img src="img/svg/file-earmark.svg" alt="blog article icon" class="blog__article-icon">
+                            <p class="blog__article-info-text">Development</p>
+                        </div>
+                        <p class="blog__article-text">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+
+                    </div>
+                    <!-- /.article -->
+                </article>
+                <article class="row">
+                    <div class="col-xl-6">
+                        <img class="blog__img" src="img/blog-img-3.jpg" alt="blog image">
+                    </div>
+                    <div class="col-xl-6 blog__article">
+                        <a href="#" class="blog__article-title">
+                            <h3>SEO Quis Vestibulum</h3>
+                        </a>
+                        <div class="blog__article-info d-flex align-items-center">
+                            <img src="img/svg/calendar.svg" alt="blog article icon" class="blog__article-icon">
+                            <span class="blog__article-date">14.07.2017</span>
+                            <img src="img/svg/file-earmark.svg" alt="blog article icon" class="blog__article-icon">
+                            <p class="blog__article-info-text">Development</p>
+                        </div>
+                        <p class="blog__article-text">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+
+                    </div>
+                    <!-- /.article -->
+                </article>
+                <div class="d-flex justify-content-center">
+                    <button class="button blog__button">More view</button>
+                </div>
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.blog -->
     </main>
     <!-- /.main -->
     <!-- Footer -->
     <footer class="footer ">
         <div class="container ">
-            <nav class="footer-nav "></nav>
-            <!-- /.footer-nav -->
+
         </div>
         <!-- /.footer-container -->
     </footer>

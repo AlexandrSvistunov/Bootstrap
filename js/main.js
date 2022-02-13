@@ -2,23 +2,23 @@ $(document).ready(function() {
 
     // ****** Фильтр галереи******
 
-    $('.button[filter]').click(function() {
+    $('.button[data-filter]').click(function() {
 
-        if ($(this).attr('val') == 'off') {
-            $('.button[filter]').attr('val', 'off'); // Присваиваем у всех кнопок атрибуту "val" значение "off" 
+        if ($(this).data('val') == 'off') {
+            $('.button[data-filter]').data('val', 'off'); // Присваиваем у всех кнопок атрибуту "data-val" значение "off" 
 
-            $(this).attr('val', 'on'); //Присваиваем у нажатой кнопки атрибуту "val" значение "on" 
+            $(this).data('val', 'on'); //Присваиваем у нажатой кнопки атрибуту "data-val" значение "on" 
 
             $('.filter > div').hide(300); // Скрываем все элементы
 
-            var filter = $(this).attr('filter'); // Присваиваем переменной filter значение атрибута filter нажатой кнопки
+            var filter = $(this).data('filter'); // Присваиваем переменной filter значение атрибута data-filter нажатой кнопки
 
-            $('.filter > div[filter=' + filter + ']').show(300); // Показываем элементы с нужным атрибутом
+            $('.filter > div[data-filter=' + filter + ']').show(300); // Показываем элементы с нужным атрибутом
 
-            if ($(this).attr('filter') == 'all') {
-                $('.button[filter]').attr('val', 'off'); // Присваиваем у всех кнопок атрибуту "val" значение "off" 
+            if ($(this).data('filter') == 'all') {
+                $('.button[data-filter]').data('val', 'off'); // Присваиваем у всех кнопок атрибуту "data-val" значение "off" 
 
-                $(this).attr('val', 'on'); //Присваиваем у нажатой кнопки атрибуту "val" значение "on" 
+                $(this).data('val', 'on'); //Присваиваем у нажатой кнопки атрибуту "data-val" значение "on" 
 
                 $('.filter > div').show(300); // Показываем все элементы
             }

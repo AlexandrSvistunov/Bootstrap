@@ -401,7 +401,7 @@ button {
   margin-bottom: 30px;
 }
 .pricing .subtitle {
-  margin-bottom: 123px;
+  margin-bottom: 126px;
 }
 .pricing__item {
   background-color: #ffffff;
@@ -472,8 +472,8 @@ button {
 /******** Team **********/
 .team {
   text-align: center;
-  padding-top: 126px;
-  padding-bottom: 90px;
+  padding-top: 123px;
+  padding-bottom: 120px;
 }
 .team .subtitle {
   margin-bottom: 126px;
@@ -541,6 +541,84 @@ button {
 }
 .team li[class=slick-active] button {
   background-color: #3949ab;
+}
+
+/******** Blog **********/
+.blog {
+  text-align: center;
+  padding-top: 125px;
+  padding-bottom: 125px;
+  background-color: #e4fdf9;
+}
+.blog .subtitle {
+  margin-bottom: 125px;
+}
+.blog__button {
+  color: #ffffff;
+  line-height: 1.1;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  background-color: #00897b;
+  padding: 21px 49px;
+  border: solid 3px #00897b;
+  margin-top: 126px;
+}
+.blog__button:hover {
+  border: solid 3px #00897b;
+  background-color: transparent;
+  color: #00897b;
+}
+.blog__button:active {
+  border: solid 3px #00897b;
+  background-color: #00897b;
+  color: #ffffff;
+}
+.blog__img {
+  margin: 0 auto;
+}
+.blog__article {
+  text-align: left;
+  padding: 54px 110px 50px 17px;
+}
+.blog__article-title {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 17px;
+  letter-spacing: 0.15px;
+}
+.blog__article-title:hover {
+  color: #00897b;
+}
+.blog__article-info {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.85px;
+  margin-bottom: 21px;
+}
+.blog__article-info-text {
+  margin-bottom: 0;
+}
+.blog__article-icon {
+  height: 16px;
+  width: 16px;
+  margin-right: 15px;
+}
+.blog__article-date {
+  margin-right: 40px;
+}
+.blog__article-text {
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  font-size: 15px;
+  line-height: 1.47;
+  letter-spacing: 0.75px;
+}
+.blog article:nth-child(odd) > div:first-child {
+  order: 2;
+}
+.blog article:nth-child(odd) > div:last-child {
+  order: 1;
 }
 
 /****************Footer***************/
