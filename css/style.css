@@ -175,8 +175,9 @@ button {
   background-color: #393939;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/header-bg.jpg);
   color: #ffffff;
-  background-size: 122%;
-  background-position: 69% 31%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   text-align: center;
   padding-top: 170px;
   padding-bottom: 187px;
@@ -622,7 +623,93 @@ button {
 }
 
 /****************Footer***************/
-/********** Footer-top***********/
+.footer {
+  text-align: center;
+  background-color: #393939;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/footer-bg.jpg);
+  background-size: cover;
+  color: #ffffff;
+  padding-top: 128px;
+  padding-bottom: 110px;
+}
+.footer .subtitle {
+  margin-bottom: 100px;
+}
+.footer__contacts {
+  margin-bottom: 60px;
+}
+.footer__contacts-item {
+  margin: 0 25px;
+}
+.footer__contacts-img {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  background-color: #3949ab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+.footer__contacts-info {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+.footer__form-input, .footer__form-message {
+  border-radius: 10px;
+  padding: 28px 23px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 32px;
+  outline: none;
+}
+.footer__form-message {
+  min-height: 322px;
+  padding: 20px 16px;
+  margin-bottom: 37px;
+  resize: none;
+}
+.footer__form-button {
+  width: auto;
+  border-radius: 10px;
+  padding: 24px 84px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  color: #212121;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  margin-left: 30px;
+  transition: 0.3s;
+}
+.footer__form-button:hover {
+  opacity: 0.5;
+}
+.footer .col-xl-5 {
+  width: 44.1%;
+}
+.footer .col-xl-10 {
+  width: 87.9%;
+}
+
+.copiright {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  color: #212121;
+  padding: 20px;
+}
+
 /******* Media **********/
 /********** Interaktive ***********/
 @media (min-width: 992px) {

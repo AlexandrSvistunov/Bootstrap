@@ -44,7 +44,16 @@ $(document).ready(function() {
         slidesToScroll: 3,
         arrows: false,
         dots: true,
-        dotsClass: 'dots-style'
+        dotsClass: 'dots-style',
+
+        responsive: [{
+            breakpoint: 1124,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+            }
+        }]
+
     });
 
 });

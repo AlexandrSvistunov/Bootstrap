@@ -527,7 +527,7 @@
                 </div>
                 <article class="row">
                     <div class="col-xl-6">
-                        <img class="blog__img" src="img/blog-img-1.jpg" alt="blog image">
+                        <img class="blog__img img-fluid" src="img/blog-img-1.jpg" alt="blog image">
                     </div>
                     <div class="col-xl-6 blog__article">
                         <a href="#" class="blog__article-title">
@@ -546,7 +546,7 @@
                 </article>
                 <article class="row">
                     <div class="col-xl-6">
-                        <img class="blog__img" src="img/blog-img-2.jpg" alt="blog image">
+                        <img class="blog__img img-fluid" src="img/blog-img-2.jpg" alt="blog image">
                     </div>
                     <div class="col-xl-6 blog__article">
                         <a href="#" class="blog__article-title">
@@ -565,7 +565,7 @@
                 </article>
                 <article class="row">
                     <div class="col-xl-6">
-                        <img class="blog__img" src="img/blog-img-3.jpg" alt="blog image">
+                        <img class="blog__img img-fluid" src="img/blog-img-3.jpg" alt="blog image">
                     </div>
                     <div class="col-xl-6 blog__article">
                         <a href="#" class="blog__article-title">
@@ -592,11 +592,46 @@
     </main>
     <!-- /.main -->
     <!-- Footer -->
-    <footer class="footer ">
-        <div class="container ">
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-7">
+                    <h2 class="title">Contact Us</h2>
+                    <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                </div>
+            </div>
+            <div class="row footer__contacts justify-content-center">
+                <div class="col-xl-3 footer__contacts-item">
+                    <a href="#" class="footer__contacts-img"><img src="img/svg/geo-map.svg" alt="contacts image"></a>
+                    <p class="footer__contacts-info">Nobinagar savar,Dhaka Bangladesh</p>
+                </div>
+                <div class="col-xl-3 footer__contacts-item">
+                    <a href="tel:+8801743331996" class="footer__contacts-img"><img src="img/svg/telephone.svg" alt="contacts image"></a>
+                    <a href="tel:+8801743331996" class="footer__contacts-info">+8801743331996
+                    </a>
+                    <a href="tel:+8801928737807" class="footer__contacts-info">+8801928737807
+                    </a>
 
-        </div>
-        <!-- /.footer-container -->
+                </div>
+                <div class="col-xl-3 footer__contacts-item">
+                    <a href="mailto:quickmasud@gmail.com" class="footer__contacts-img"><img src="img/svg/mail.svg" alt="contacts image"></a>
+                    <a href="mailto:quickmasud@gmail.com" class="footer__contacts-info">quickmasud@gmail.com
+                    </a>
+                    <a href="mailto:quickmasud@yahoo.com" class="footer__contacts-info">quickmasud@yahoo.com
+                    </a>
+                </div>
+            </div>
+            <form class="footer__form row justify-content-center">
+                <div class="col-xl-5"><input class="footer__form-input" type="text" placeholder="Your NAME"></div>
+                <div class="col-xl-5"><input class="footer__form-input" type="email" placeholder="Your Email"></div>
+                <div class="col-xl-10"><textarea class="footer__form-message" placeholder="Write Massage"></textarea></div>
+                <div class=" col-xl-2 offset-xl-7"><button class="footer__form-button" type="submit">Send</button></div>
+            </form>
+            <!-- /.footer-container -->
+    </footer>
+    <footer>
+        <p class="copiright">
+            All rights Reserved © 2017</p>
     </footer>
     <!-- /.footer -->
     <script src="js/jquery-3.6.0.min.js"></script>
