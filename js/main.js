@@ -88,7 +88,7 @@ $(document).ready(function() {
     // *******Кнопка наверх********* 
 
     $(window).scroll(function() {
-        if ($(this).scrollTop() != 0) // Отслеживаем скролл окна
+        if ($(this).scrollTop() != 0) // Отслеживаем окно не на самом верху
             $('#toTop').fadeIn(); // Появление кнопки
 
         else
@@ -102,4 +102,21 @@ $(document).ready(function() {
         }, 800);
     });
 
+    // *******Выпадающее меню*********
+    $('.menu-burger').click(function() { // Отслеживаем клик по кнопке бургеру
+        $('nav').slideToggle(500); // Вываливаем меню
+        $('ul.menu').css({
+            'display': 'flex',
+            'flex-direction': 'column'
+        }); // Вертикалим меню
+
+        // Меняем бургер на крестик и обратно
+        if ($('.menu-burger').html() == '<img src="img/svg/burger.svg" alt="burger menu">') {
+            $(this).html('<img src="img/svg/xmark.svg" alt="burger menu">')
+        } else {
+            $(this).html('<img src="img/svg/burger.svg" alt="burger menu">')
+        }
+
+
+    });
 });
