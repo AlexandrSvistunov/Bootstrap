@@ -166,6 +166,12 @@ nav {
 .logo {
   width: 226px;
   height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo__img {
+  width: 100%;
 }
 
 .search {
@@ -723,11 +729,8 @@ nav {
 .footer__form-button:hover {
   opacity: 0.5;
 }
-.footer .col-xl-5 {
-  width: 44.1%;
-}
 .footer .col-xl-10 {
-  width: 87.9%;
+  width: 83.9%;
 }
 
 .copiright {
@@ -800,9 +803,110 @@ nav {
   }
 }
 @media (max-width: 768px) {
+  .about,
+.services,
+.works,
+.pricing,
+.team,
+.blog,
+.footer {
+    padding: 60px 0;
+  }
+  .about .subtitle,
+.services .subtitle,
+.works .subtitle,
+.pricing .subtitle,
+.team .subtitle,
+.blog .subtitle,
+.footer .subtitle {
+    margin-bottom: 60px;
+  }
+
   .blog__article {
     padding-top: 0px;
     padding-bottom: 10px;
+    padding-right: 10px;
+  }
+  .blog__article-date {
+    margin-right: 10px;
+  }
+  .blog__article-info {
+    font-size: 14px;
+  }
+  .blog__img {
+    margin-bottom: 20px;
   }
 }
-/********** Мобильное меню ***********/ /*# sourceMappingURL=style.css.map */
+/********** Мобильное меню ***********/ 
+@media (max-width: 760px) {
+  .works__menu {
+    margin-bottom: 60px;
+  }
+  .works__menu-buttons {
+    flex-direction: column;
+  }
+  .works__menu-button {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .works__menu-button:first-child {
+    margin-right: 0;
+  }
+  .works__gallery-button {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .blog article:nth-child(odd) > div:first-child {
+    order: 1;
+  }
+  .blog article:nth-child(odd) > div:last-child {
+    order: 2;
+  }
+  .blog__button {
+    margin-top: 15px;
+  }
+
+  .footer .col-xl-10 {
+    width: 100%;
+  }
+}
+@media (max-width: 490px) {
+  .logo {
+    width: 150px;
+    height: 30px;
+  }
+
+  .main {
+    padding: 20px 0;
+  }
+  .main__title {
+    font-size: 40px;
+  }
+  .main__subtitle {
+    margin-bottom: 40px;
+  }
+  .main__buttons {
+    flex-direction: column;
+  }
+  .main .button {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .main .button:last-child {
+    margin-bottom: 0;
+  }
+
+  .team .slick-list {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 400px) {
+  .title {
+    line-height: 1.1;
+  }
+
+  .team__item-img {
+    padding: 0 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

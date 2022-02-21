@@ -18,7 +18,7 @@
     <header class="menu-bar">
         <div class="container">
             <div class="row mobile-menu">
-                <a class="col-xl-2 logo" href="index.html"><img src="img/logo.png" alt="Логотип" width="226" height="63"></a>
+                <a class="col-xl-2 logo" href="index.html"><img class="logo__img" src="img/logo.png" alt="Логотип"></a>
                 <button class="menu-burger"><img src="img/svg/burger.svg" alt="burger menu"></button>
                 <nav class="col-xl-8 ms-auto align-self-center">
                     <ul class="menu d-flex justify-content-end">
@@ -59,9 +59,9 @@
                     <div class="col-xl-12">
                         <h1 class="main__title">Web development project</h1>
                         <p class="main__subtitle">Very suitable to support all web development projects</p>
-                        <div class="d-flex justify-content-center">
-                            <button class="button">Our services</button>
-                            <button class="button">Hire is now</button>
+                        <div class="main__buttons d-flex justify-content-center">
+                            <a href="#services" class="button">Our services</a>
+                            <a href="#" class="button">Hire is now</a>
                         </div>
                     </div>
                 </div>
@@ -183,8 +183,8 @@
                 </div>
                 <!-- /.row -->
                 <div class="row justify-content-center works__menu">
-                    <div class="col-xl-8">
-                        <div class="d-flex justify-content-center">
+                    <div class="col-xl-8 col-md-6 col-sm-6">
+                        <div class="works__menu-buttons d-flex justify-content-center ">
                             <button type="button" data-val="on" class="button works__menu-button" data-filter="all">All</button>
                             <button type="button" data-val="off" class="button works__menu-button" data-filter="web">Web design</button>
                             <button type="button" data-val="off" class="button works__menu-button" data-filter="design">Ui/ux design</button>
@@ -328,7 +328,7 @@
                     <div class="col-xl-4">
                         <div class="team__item">
                             <div class="team__item-img">
-                                <img src="img/team-img-1.jpg" alt="team image">
+                                <img class="img-fluid" src="img/team-img-1.jpg" alt="team image">
                             </div>
                             <div class="team__item-info">
                                 <p class="team__item-name">John Doe</p>
@@ -349,7 +349,7 @@
                     <div class="col-xl-4">
                         <div class="team__item">
                             <div class="team__item-img">
-                                <img src="img/team-img-2.jpg" alt="team image">
+                                <img class="img-fluid" src="img/team-img-2.jpg" alt="team image">
                             </div>
                             <div class="team__item-info">
                                 <p class="team__item-name">Alexa Biru</p>
@@ -370,7 +370,7 @@
                     <div class="col-xl-4">
                         <div class="team__item">
                             <div class="team__item-img">
-                                <img src="img/team-img-3.jpg" alt="team image">
+                                <img class="img-fluid" src="img/team-img-3.jpg" alt="team image">
                             </div>
                             <div class="team__item-info">
                                 <p class="team__item-name">Ronobir sing</p>
@@ -391,7 +391,7 @@
                     <div class="col-xl-4">
                         <div class="team__item">
                             <div class="team__item-img">
-                                <img src="img/team-img-1.jpg" alt="team image">
+                                <img class="img-fluid" src="img/team-img-1.jpg" alt="team image">
                             </div>
                             <div class="team__item-info">
                                 <p class="team__item-name">Ronobir sing</p>
@@ -412,7 +412,7 @@
                     <div class="col-xl-4">
                         <div class="team__item">
                             <div class="team__item-img">
-                                <img src="img/team-img-1.jpg" alt="team image">
+                                <img class="img-fluid" src="img/team-img-1.jpg" alt="team image">
                             </div>
                             <div class="team__item-info">
                                 <p class="team__item-name">Ronobir sing</p>
@@ -443,10 +443,10 @@
                     </div>
                 </div>
                 <article class="row">
-                    <div class="col-xl-6 col-md-6">
+                    <div class="col-xl-6 col-md-6 col-sm-6">
                         <img class="blog__img img-fluid" src="img/blog-img-1.jpg" alt="blog image">
                     </div>
-                    <div class="col-xl-6 col-md-6">
+                    <div class="col-xl-6 col-md-6 col-sm-6">
                         <div class="blog__article">
                             <a href="#" class="blog__article-title">
                                 <h3>SEO Quis Vestibulum</h3>
@@ -464,10 +464,10 @@
                     <!-- /.article -->
                 </article>
                 <article class="row">
-                    <div class="col-xl-6 col-md-6">
+                    <div class="col-xl-6 col-md-6 col-sm-6">
                         <img class="blog__img img-fluid" src="img/blog-img-2.jpg" alt="blog image">
                     </div>
-                    <div class="col-xl-6 col-md-6">
+                    <div class="col-xl-6 col-md-6 col-sm-6">
                         <div class="blog__article">
                             <a href="#" class="blog__article-title">
                                 <h3>SEO Quis Vestibulum</h3>
@@ -484,10 +484,10 @@
                     <!-- /.article -->
                 </article>
                 <article class="row">
-                    <div class="col-xl-6 col-md-6">
+                    <div class="col-xl-6 col-md-6 col-sm-6">
                         <img class="blog__img img-fluid" src="img/blog-img-3.jpg" alt="blog image">
                     </div>
-                    <div class="col-xl-6 col-md-6">
+                    <div class="col-xl-6 col-md-6 col-sm-6">
                         <div class="blog__article">
                             <a href="#" class="blog__article-title">
                                 <h3>SEO Quis Vestibulum</h3>
@@ -543,8 +543,8 @@
                 </div>
             </div>
             <form class="footer__form row justify-content-center">
-                <div class="col-xl-5"><input class="footer__form-input" type="text" placeholder="Your NAME"></div>
-                <div class="col-xl-5"><input class="footer__form-input" type="email" placeholder="Your Email"></div>
+                <div class="col-xl-5 col-md-5 col-sm-10"><input class="footer__form-input" type="text" placeholder="Your NAME"></div>
+                <div class="col-xl-5 col-md-5 col-sm-10"><input class="footer__form-input" type="email" placeholder="Your Email"></div>
                 <div class="col-xl-10"><textarea class="footer__form-message" placeholder="Write Massage"></textarea></div>
                 <div class=" col-xl-2 offset-xl-7"><button class="footer__form-button" type="submit">Send</button></div>
             </form>
